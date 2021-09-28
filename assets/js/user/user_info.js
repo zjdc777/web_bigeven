@@ -16,7 +16,7 @@ $(function () {
     function initUserInfo() {
         $.ajax({
             method: 'GET',
-            url: 'http://api-breakingnews-web.itheima.net/my/userinfo',
+            url: '/my/userinfo',
             success: function (res) {
                 if (res.status !== 0) {
                     return layer.msg('获取用户信息失败！')
@@ -38,7 +38,7 @@ $(function () {
         // 发起 ajax 数据请求
         $.ajax({
             method: 'POST',
-            url: 'http://api-breakingnews-web.itheima.net/my/userinfo',
+            url: '/my/userinfo',
             data: $(this).serialize(),
             success: function (res) {
                 if (res.status !== 0) {

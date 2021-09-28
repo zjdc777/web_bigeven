@@ -45,7 +45,7 @@ $(function () {
         // 2. 调用接口，把头像上传到服务器
         $.ajax({
             method: 'POST',
-            url: 'http://api-breakingnews-web.itheima.net/my/update/avatar',
+            url: '/my/update/avatar',
             data: {
                 avatar: dataURL
             },

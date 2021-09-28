@@ -22,7 +22,7 @@ $(function () {
         e.preventDefault()
         $.ajax({
             method: 'POST',
-            url: 'http://api-breakingnews-web.itheima.net/my/updatepwd',
+            url: '/my/updatepwd',
             data: $(this).serialize(),
             success: function (res) {
                 if (res.status !== 0) {

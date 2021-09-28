@@ -18,7 +18,7 @@ $(function () {
 function getUserInfo() {
     $.ajax({
         method: 'GET',
-        url: 'http://api-breakingnews-web.itheima.net/my/userinfo',
+        url: '/my/userinfo',
         // headers 就是请求头配置对象
         // headers: {
         //     Authorization: localStorage.getItem('token') || ''
